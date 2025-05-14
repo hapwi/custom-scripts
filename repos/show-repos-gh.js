@@ -7,12 +7,11 @@
 // @run-at       document-idle
 // ==/UserScript==
 (() => {
+  const githubUsername = "hapwi";
+  const repoUrl = `https://github.com/${githubUsername}?tab=repositories`;
   function addRepoLink() {
     if (
-      document.querySelector(
-        ".AppHeader-context-full " +
-          '[href="https://github.com/hapwi?tab=repositories"]'
-      )
+      document.querySelector(".AppHeader-context-full " + `[href="${repoUrl}"]`)
     ) {
       return;
     }
@@ -22,7 +21,7 @@
     separator.style.margin = "10px 1px";
     const listItem = document.createElement("li");
     const anchor = document.createElement("a");
-    anchor.href = "https://github.com/hapwi?tab=repositories";
+    anchor.href = repoUrl;
     anchor.setAttribute(
       "data-analytics-event",
       '{"category":"SiteHeaderComponent",' +
