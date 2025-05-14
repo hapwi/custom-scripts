@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         GitHub: Add "Repos" Link
-// @version      1.0
+// @version      1.0.0
 // @description  Inserts a "repos" link into GitHub header
 // @match        https://github.com/*
 // @grant        none
