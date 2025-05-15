@@ -31,7 +31,7 @@ https://github.com/hapwi?tab=repositories
 
 ## Customization
 
-- To point the link to your own GitHub profile, open the script in Tampermonkey and replace all instances of `hapwi` in the `anchor.href` and `querySelector` calls with your GitHub username.
+- To point the link to your own GitHub profile, open the script in Tampermonkey and replace all instances of `hapwi` in the `githubUsername` variable with your GitHub username.
 
 ---
 
